@@ -35,3 +35,11 @@
 /home/ahmed/projects/udacity/GoChaseIt!/build/gtest/googletest/CMakeFiles/test.dir
 /home/ahmed/projects/udacity/GoChaseIt!/build/gtest/googletest/CMakeFiles/gtest_main.dir
 /home/ahmed/projects/udacity/GoChaseIt!/build/gtest/googletest/CMakeFiles/gtest.dir
+/home/ahmed/projects/udacity/GoChaseIt!/build/my_robot/CMakeFiles/install/strip.dir
+/home/ahmed/projects/udacity/GoChaseIt!/build/my_robot/CMakeFiles/install/local.dir
+/home/ahmed/projects/udacity/GoChaseIt!/build/my_robot/CMakeFiles/install.dir
+/home/ahmed/projects/udacity/GoChaseIt!/build/my_robot/CMakeFiles/list_install_components.dir
+/home/ahmed/projects/udacity/GoChaseIt!/build/my_robot/CMakeFiles/rebuild_cache.dir
+/home/ahmed/projects/udacity/GoChaseIt!/build/my_robot/CMakeFiles/edit_cache.dir
+/home/ahmed/projects/udacity/GoChaseIt!/build/my_robot/CMakeFiles/test.dir
+/home/ahmed/projects/udacity/GoChaseIt!/build/my_robot/CMakeFiles/_catkin_empty_exported_target.dir
