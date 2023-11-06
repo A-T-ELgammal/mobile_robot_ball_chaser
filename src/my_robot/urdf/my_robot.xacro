@@ -32,7 +32,7 @@
         <limit  effort = "${effort}" velocity = "${velocity}"/>
         <dynamics damping="1.0" friction="1.0"/>
     </joint>
-
+    
     <joint name = "left_wheel_hinge" type = "continuous">
         <origin xyz = "0 -0.15 0" rpy = "0 0 0"/>
         <axis xyz="0.0 1.0 0.0"/>
@@ -45,7 +45,7 @@
     <joint name = "Camera_joint" type = "fixed">
         <origin xyz = "0.2 0 0" rpy = "0 0 0"/>
         <parent link = "chassis"/>
-        <child  link = "Camera"/>
+        <child  link = "camera"/>
     </joint>
 
     <joint name = "hokuyo_joint" type  = "fixed">
@@ -54,8 +54,8 @@
         <parent link = "chassis"/>
         <child  link = "hokuyo"/>
     </joint>
-    
-    <xacro:include filename = "$(find my_robot)/urdf/my_robo.gazebo"/>
+
+    <xacro:include filename = "$(find my_robot)/urdf/my_robot.gazebo"/>
 
     <!-- LINKS -->    
     <link name = "robot_footprint"></link>
@@ -160,7 +160,7 @@
         </inertial>
     </link>
 
-    <link name = "Camera">
+    <link name = "camera">
         <visual>
             <origin xyz = "0 0 0" rpy = "0 0 0"/>
             <geometry>
