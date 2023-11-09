@@ -87,7 +87,7 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
-        searchForBall();
+    return searchForBall();
 }
 
 int main(int argc, char **argv)
