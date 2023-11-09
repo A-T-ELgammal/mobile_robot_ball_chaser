@@ -1,32 +1,33 @@
-# Go Chase It !
+# Go Chase It!
 
-## project goal:
+## Project Goal
 
-    - drive a car robot contains camera to follow the white ball in
-    the its world.
+The goal of this project is to develop a car robot equipped with a camera that can autonomously track and follow a white ball within its simulated environment.
 
-## project structure:
+## Project Structure
 
-    - structure_files preview:
-        ![Alt files](src/project_structure.png)
-    pacages:
-        - my_robot:
-            - design: that package contains the robot design xacro file which contains robot consist of chassis and two wheels attached with two hinges and fixed other two casters.
-            - sensors: attached to chassis, two sensors: camera and
-            hokuyo LIDAR sensor.
-            - launch file that contains the xacro design and gazebo plugin (libgazebo_ros_diff_drive) to publish the odometry
-            ,camera,laser beam of LIDAR and controller /cmd_vel which
-            control tha movement using velocity and angle in x,y,z .
-            contain rviz also to show sensor results visually.
-        - ball_chaser:
-            - contains two nodes:
-                - drive_bot: that responsible for publish the DriveToTarget service to the "/cmd_vel" topic to move the robot.
-                - process_image: that resposible for analyze the image taken by the camera and detect the white ball and its position, then subscribe to the topic published by drive_bot node, then by the service client callback function made the procecss and finally update the DriveToTarget service with the new velocity and angular properties.
+### Project Files Preview
+![Project Structure](src/project_structure.png)
 
-## run the project:
+The project consists of two main packages:
 
-    - running my_robot:
-            roslaunch my_robot world.launch
-    - running ball_chaser:
-            roslaunch ball_chaser ball_chaser.launch
-    - move the ball in gazebo simulation, the robot will move to its direction by itself and if not found, it will spin till find it   to drive to it again.
+#### `my_robot`
+- `design`: This package contains the robot's design Xacro file, which defines the robot's structure, including the chassis, two wheels attached with two hinges, and two fixed casters.
+- `sensors`: These sensors are attached to the robot's chassis, including a camera and a Hokuyo LIDAR sensor.
+- `launch`: Contains launch files that bring up the robot in the Gazebo simulation environment, incorporating the Xacro design and the Gazebo plugin `libgazebo_ros_diff_drive` for publishing odometry data, camera images, LIDAR data, and the controller for velocity and angular control in the x, y, and z directions. It also includes an RViz configuration to visualize sensor data.
+
+#### `ball_chaser`
+- This package contains two nodes:
+  - `drive_bot`: Responsible for publishing the `DriveToTarget` service to the `/cmd_vel` topic, enabling the robot to move based on the provided velocity and angular properties.
+  - `process_image`: Analyzes images captured by the camera, detects the white ball's position, subscribes to the topic published by the `drive_bot` node, and, through a service client callback function, updates the `DriveToTarget` service with new velocity and angular properties.
+
+## Running the Project
+
+To run the project, follow these steps:
+
+1. Launch the robot simulation:
+   ```bash
+   roslaunch my_robot world.launch
+2. Launch bll_chaser ndoes (drive_bot,process_image) simulation:
+   ```bash
+   roslaunch ball_chaser ball_chaser.launch
