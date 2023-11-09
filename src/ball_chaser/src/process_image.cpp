@@ -58,9 +58,9 @@ void driveTo(const location pixelLocation)
     drive_bot(velocity, angle);
 }
 
-void stopRobot()
+void searchForBall()
 {
-    float velocity = 0, angle = 0;
+    float velocity = 0, angle = 0.3;
     return drive_bot(velocity, angle);
 }
 
@@ -87,7 +87,7 @@ void process_image_callback(const sensor_msgs::Image img)
         }
     }
 
-    stopRobot();
+        searchForBall();
 }
 
 int main(int argc, char **argv)
