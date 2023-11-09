@@ -28,6 +28,6 @@ To run the project, follow these steps:
 1. Launch the robot simulation:
    ```bash
    roslaunch my_robot world.launch
-2. Launch bll_chaser ndoes (drive_bot,process_image) simulation:
+2. Launch bll_chaser node (drive_bot,process_image) simulation:
    ```bash
    roslaunch ball_chaser ball_chaser.launch
