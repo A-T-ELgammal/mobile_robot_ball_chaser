@@ -7,4 +7,3 @@
 # new environment variables
 
 # modified environment variables
-export PYTHONPATH="/home/ahmed/projects/udacity/GoChaseIt!/devel/lib/python3/dist-packages:$PYTHONPATH"
