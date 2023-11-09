@@ -8,7 +8,7 @@
 ## project structure:
 
     - structure_files preview:
-        ![project_structure_files](/src/project_structure.png)
+        ![Alt files](src/project_structure.png)
     pacages:
         - my_robot:
             - design: that package contains the robot design xacro file which contains robot consist of chassis and two wheels attached with two hinges and fixed other two casters.
