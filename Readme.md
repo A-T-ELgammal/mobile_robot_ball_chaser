@@ -7,7 +7,7 @@ The goal of this project is to develop a car robot equipped with a camera that c
 ## Project Structure
 
 ### Project Files Preview
-![Project Structure](src/project_structure.png)
+![Project Structure](/src/images/project_structure.png)
 
 The project consists of two main packages:
 
@@ -31,3 +31,7 @@ To run the project, follow these steps:
 2. Launch bll_chaser node (drive_bot,process_image) simulation:
    ```bash
    roslaunch ball_chaser ball_chaser.launch
+### Output images:
+![Project Structure](/src/images/full.png)
+![terminal](/src/images/terminal.png)
+![full](/src/images/project_structure.png)
