@@ -21,6 +21,10 @@ The project consists of two main packages:
   - `drive_bot`: Responsible for publishing the `DriveToTarget` service to the `/cmd_vel` topic, enabling the robot to move based on the provided velocity and angular properties.
   - `process_image`: Analyzes images captured by the camera, detects the white ball's position, subscribes to the topic published by the `drive_bot` node, and, through a service client callback function, updates the `DriveToTarget` service with new velocity and angular properties.
 
+### Output images:
+![Project Structure](/src/images/run.png)
+![terminal](/src/images/terminal.png)
+
 ## Running the Project
 
 To run the project, follow these steps:
@@ -31,7 +35,3 @@ To run the project, follow these steps:
 2. Launch bll_chaser node (drive_bot,process_image) simulation:
    ```bash
    roslaunch ball_chaser ball_chaser.launch
-### Output images:
-![Project Structure](/src/images/full.png)
-![terminal](/src/images/terminal.png)
-![full](/src/images/project_structure.png)
